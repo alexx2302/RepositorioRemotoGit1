@@ -1,12 +1,13 @@
 package com.alej.back;
 
+import java.io.File;
 import java.util.*;
 
 public class Gestor {
 
     public static void main(String[] args) {
 
-
+        File file;
         //Crear hashmap
 
         /**
@@ -25,5 +26,6 @@ public class Gestor {
         for (int alumnado : mapa.keySet()) {
             System.out.println("ID - " + alumnado + " con nota - " + mapa.get(alumnado));
         }
+        System.out.println(mapa.get(8));
     }
 }
